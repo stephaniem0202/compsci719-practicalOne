@@ -1,0 +1,48 @@
+#container {
+    position: relative;
+    width: 800px;
+    height:600px;
+    border: 1px solid black;
+
+    margin: auto;
+    transform: translateY(50%); 
+}
+
+#background { 
+
+    position: absolute;
+    width: 800px;
+    height:600px;
+}
+
+#charizard {
+    position: absolute;
+    height:500px;
+    left: 210px;
+    top: 90px;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 4px red);
+}
+
+#breath {
+    position: absolute;
+    width:100px;
+    left: 360px;
+    top: 100px;
+    z-index: 3;
+    transform-origin: 90% 50%;
+    transform: rotate(45deg);
+    transition: all 1s;
+}
+
+#breath:hover {
+    transform: scale(3) rotate(45deg);
+}
+
+#tail {
+    position: absolute;
+    width:100px;
+    left: 634px;
+    top: 315px;
+    z-index: 3;
+}
